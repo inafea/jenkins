@@ -13,7 +13,7 @@ pipeline {
                    }
                 }                    
             }
-
+        }
             stage('if condetion'){
                 
                 steps{
@@ -38,7 +38,7 @@ pipeline {
                         echo 'Things were different before...'
                     }
                 }
-            }
+            
         }
     }
 }
