@@ -18,7 +18,7 @@ pipeline {
                 
                 steps{
                     
-                    echo "hello"
+                    error("Build failed because of this and that..")
                 }
                 post {
                     always {
