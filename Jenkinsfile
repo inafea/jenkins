@@ -1,5 +1,3 @@
-
-
 pipeline {
     agent any
 
@@ -7,18 +5,17 @@ pipeline {
         stage('Hello') {
             steps {
                 retry(3){
-                    error("Build failed because of this and that..")
+                    //error("Build failed because of this and that..")
                     script{
                     
                     int b=3
-                    int c="${BUILD_NUMBER}"
-                    echo "${NU}"
+                    int c="${BUILD_NUMBER}"                  
                     echo "${c+b}"
-                    echo "${BUILD_NUMBER}+${NU}"
+                   
+                   }
                 }
-                    }
                     
-                }
+            }
         }
     }
 }
